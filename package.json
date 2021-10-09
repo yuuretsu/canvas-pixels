@@ -1,0 +1,13 @@
+{
+  "name": "canvas-pixels",
+  "main": "src/pixels.js",
+  "keywords": [
+    "canvas",
+    "pixel art",
+    "pixelart",
+    "art",
+    "drawing"
+  ],
+  "author": "YuraFrozen",
+  "license": "MIT"
+}
