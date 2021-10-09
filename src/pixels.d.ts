@@ -1,4 +1,7 @@
 export default class Pixels {
+  readonly width: number;
+  readonly height: number;
+  readonly source: HTMLCanvasElement;
   constructor(width: number, height: number, pixelSize: number);
   setPixel(
     x: number,

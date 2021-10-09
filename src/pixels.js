@@ -40,11 +40,6 @@ class ExtendedImageData extends ImageData {
 }
 
 export default class Pixels {
-  /**
-   * @param {number} width
-   * @param {number} height
-   * @param {number} pixelSize
-   */
   constructor(width, height, pixelSize) {
     /** @type {number} */
     this.width = width;
@@ -65,22 +60,9 @@ export default class Pixels {
     /** @type {CanvasRenderingContext2D} */
     this._innerCtx = this._innerCanvas.getContext('2d');
   }
-  /**
-   * @param {number} x
-   * @param {number} y
-   * @param {number} r
-   * @param {number} g
-   * @param {number} b
-   * @param {number} a
-   */
   setPixel(x, y, r, g, b, a) {
     this._data.setPixel(x, y, r, g, b, a);
   }
-  /**
-   * @param {number} x
-   * @param {number} y
-   * @returns {[number, number, number, number]}
-   */
   getPixel(x, y) {
     return this._data.getPixel(x, y);
   }
