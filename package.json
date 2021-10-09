@@ -1,6 +1,8 @@
 {
   "name": "canvas-pixels",
   "main": "src/pixels.js",
+  "version": "1.0.0",
+  "author": "Yurii Morozov",
   "keywords": [
     "canvas",
     "pixel art",
@@ -8,6 +10,5 @@
     "art",
     "drawing"
   ],
-  "author": "YuraFrozen",
   "license": "MIT"
 }
