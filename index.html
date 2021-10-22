@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script type="module">
+    import Pixels from "./pixels.js";
+
+    const pixels = new Pixels(256, 256, 2);
+    document.body.appendChild(pixels.source);
+
+    function step() {
+      const start = performance.now();
+      pixels.clear();
+      for (let x = 0; x < pixels.width; x++) {
+        for (let y = 0; y < pixels.height; y++) {
+          const ALPHA =
+            (Math.sin(Math.hypot(x - 128 - 50, y - 128) + time / 10) * 255) +
+            (Math.sin(Math.hypot(x - 128 + 50, y - 128) - time / 10) * 255);
+          pixels.setPixel(x, y, 0, 0, 0, ALPHA);
+        }
+      }
+      pixels.update();
+      $time.textContent = (performance.now() - start).toFixed(1);
+      time += 1;
+    }
+
+    const FPS = 60;
+    setInterval(step, 1000 / FPS);
+
+    let time = 0;
+    const $time = document.getElementById("time-value");
+  </script>
+  <p>time per frame: <span id="time-value">0</span>ms</p>
+</body>
+
+</html>
