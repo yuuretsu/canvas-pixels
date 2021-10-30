@@ -3,6 +3,7 @@
 Простая библиотека для быстрого рисования пикселей.
 
 Вот демка: https://yuuretsu.github.io/canvas-pixels/
+CDN: https://cdn.jsdelivr.net/gh/yuuretsu/canvas-pixels@eced8bad2adb854c4b1e839aac311dcae933dbea/src/pixels.js
 
 Можно прямо этот код запустить. Главное не забыть перед этим подключить саму библиотеку :)
 ```js
