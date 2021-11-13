@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "target": "es6",
+  },
+  "exclude": [
+    "node_modules"
+  ],
+}

@@ -1,14 +1,28 @@
 {
-  "name": "canvas-pixels",
-  "main": "src/pixels.js",
-  "version": "1.0.0",
+  "name": "cnv-pxls",
+  "main": "./dist/cjs/index.js",
+  "module": "./dist/esm/index.js",
+  "types": "./dist/inedx.d.ts",
   "author": "Yurii Morozov",
+  "license": "MIT",
+  "repository": "github:yuuretsu/pxls",
+  "version": "1.0.0",
   "keywords": [
     "canvas",
-    "pixel art",
-    "pixelart",
-    "art",
-    "drawing"
+    "pixel-art",
+    "pixels"
   ],
-  "license": "MIT"
+  "type": "module",
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^21.0.1",
+    "@rollup/plugin-node-resolve": "^13.0.5",
+    "@rollup/plugin-typescript": "^8.2.5",
+    "rollup": "^2.60.0",
+    "rollup-plugin-dts": "^4.0.1",
+    "rollup-plugin-terser": "^7.0.2",
+    "typescript": "^4.4.3"
+  },
+  "scripts": {
+    "build": "rollup -c"
+  }
 }

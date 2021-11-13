@@ -4,7 +4,19 @@
 
 Вот демка: https://yuuretsu.github.io/canvas-pixels/
 
-CDN: https://cdn.jsdelivr.net/gh/yuuretsu/canvas-pixels@master/src/pixels.js
+## Как подключить
+
+В браузере:
+```html
+<script src="https://cdn.jsdelivr.net/npm/cnv-pxls@1.0.2/dist/cnv-pxls.min.js"></script>
+```
+
+Через npm:
+```
+npm i -D cnv-pxls
+```
+
+## Как пользоваться
 
 Можно прямо этот код запустить. Главное не забыть перед этим подключить саму библиотеку :)
 ```js
