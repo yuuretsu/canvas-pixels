@@ -8,7 +8,7 @@
 
 В браузере:
 ```html
-<script src="https://cdn.jsdelivr.net/npm/cnv-pxls@1.0.2/dist/cnv-pxls.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/cnv-pxls@1.0.3/dist/cnv-pxls.min.js"></script>
 ```
 
 Через npm:
